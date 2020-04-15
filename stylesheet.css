@@ -248,7 +248,7 @@ small{
 
 @media all and (max-width: 1000px){
   header{
-    height: 150px;
+    height: 170px;
   }
   .header-right{
     float:none;
