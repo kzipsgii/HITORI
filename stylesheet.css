@@ -73,7 +73,7 @@ header{
 .top-wrapper{
   width: 100vw;
   height: 100vh;
-  background: #FFFFFF url(images/me.jpg) no-repeat;
+  background: #FFFFFF url(images/me.JPG) no-repeat;
   background-blend-mode: lighten;
   background-size: cover;
   color: rgb(30,30,30);
