@@ -1,0 +1,280 @@
+*{
+  box-sizing: border-box;
+  color: rgb(50,50,50)
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN",sans-serif;
+}
+
+.clear{
+  clear: left;
+}
+
+.container{
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.small{
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+/* header ------------------*/
+
+header{
+  height: 65px;
+  width: 100%;
+  background-color: rgba(30,30,30,0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left{
+  float: left;
+}
+
+.header-left h1{
+  padding: 0 25px;
+  color: #F2F2F2;
+  display: block;
+  margin-top:15px
+}
+
+.header-right{
+  float: right;
+}
+
+.header-right a{
+  line-height: 65px;
+  padding: 0 25px;
+  color: #F2F2F2;
+  display: block;
+  float:left;
+  transition: all 0.5s;
+}
+
+
+.header-right a:hover{
+  background-color: rgba(242,242,242,0.2);
+}
+
+/* top --------------------------*/
+
+.top-wrapper{
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF url(images/me.jpg) no-repeat;
+  background-blend-mode: lighten;
+  background-size: cover;
+  color: rgb(30,30,30);
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding-top: 300px;
+}
+
+.top-wrapper:before{
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.top-wrapper h1{
+  opacity: 0.8;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p{
+  opacity: 0.8;
+}
+
+.mid-wrapper{
+  text-align: center;
+  background-color: #E0E0E0;
+  padding:10px;
+}
+
+/* footer  -------------------------------*/
+.sns{
+    padding:30px 0;
+    background-color: rgb(120,120,120);
+}
+.sns-wrap{
+  display: inline-block;
+  width:100%;
+}
+
+.sns-wrap a{
+ text-align: center;
+  color: white;
+  width: 33%;
+  float: left;
+}
+.fa{
+  padding: 10px;
+}
+footer{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgb(30,30,30);
+  text-align: center;
+}
+
+small{
+  color: #F2F2F2;
+}
+
+
+
+/*                 MY PROFILE
+------------------------------------------------------*/
+
+.profile-wrap{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F2F2F2;
+}
+.profile-wrap img{
+  width: 300px;
+  height: auto;
+}
+
+.center{
+  padding-top: 30px;
+  text-align: center;}
+
+.his-wrap span{
+    color: rgb(0,0,0,0.4);
+
+  }
+
+.content-wrap{
+  padding-bottom: 50px;
+  border-bottom: solid 1px rgb(30,30,30);
+}
+
+.his-wrap{
+  width: 100%;
+  margin: 0 auto;
+}
+.Y-his{
+  background-color: #E0E0E0;
+  padding: 1px 0;
+}
+
+.E-his{
+  background-color: #F2F2F2;
+  padding: 1px;
+}
+
+.J-his{
+    background-color: #E0E0E0;
+    padding: 1px;
+}
+
+.H-his{
+  background-color: #F2F2F2;
+  padding: 1px;
+}
+
+.C-his{
+  background-color: #E0E0E0;
+  padding: 1px;
+}
+
+/*             MY RULES
+-----------------------------------------------------------*/
+
+.rules-wrap{
+  padding-top: 100px;
+  padding-bottom:0px;
+  background-color: #F2F2F2;
+}
+
+.rules-wrap h1{
+  text-align: center;
+}
+
+.rules-wrap p{
+  text-align: center;
+}
+
+.ouc-wrap{
+  width: 100%;
+  background-color: #E0E0E0;
+  padding: 10px;
+}
+
+.ouc-wrap h3{
+  text-decoration: underline;
+}
+
+.ouc-wrap ul{
+}
+
+.koumoku{
+  padding:3px;
+}
+
+.rules p{
+  color: rgb(0,0,0,0.4);
+  padding-top: 30px;
+}
+
+/*    media各種設定　　　　　　　　　　　　　　　　　
+-----------------------------------------------*/
+
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 670px){
+  header{
+    height: 130px;
+  }
+  .header-right{
+    float:none;
+    display: inline-block;
+    width:100%;
+  }
+  .header-right a{
+    text-align: center;
+    width: 33%;
+    padding:0 0;
+    margin: 0 auto;
+  }
+  .top-wrapper{
+    margin-top:130px;
+    max-width: 670px;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .profile-wrap{
+    padding-top: 165px;
+  }
+  .rules-wrap{
+    padding-top: 165px;
+  }
+}
