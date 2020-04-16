@@ -1,290 +1,120 @@
-*{
-  box-sizing: border-box;
-  color: rgb(50,50,50)
-}
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coffee&sweets Hitori</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
 
-a{
-  text-decoration: none;
-}
+  <body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <h1>HITORI.</h1>
+      </div>
+      <div class="header-right">
+        <a href="index.html">HOME</a>
+        <a href="profile.html">MY PROFILE</a>
+        <a href="#">MY RULES</a>
+      </div>
+    </div>
+  </header>
 
-body{
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN",sans-serif;
-}
+  <div class="rules-wrap">
+    <div class="container">
+     <h1>MY RULES</h1>
+     <p>有限の時間を有効的に使うべく自分自身にいくつかのルールを設けています。</p>
+     <p>こいつはこんなやつなんだな。と思っていただければ幸いです。</p>
+     <div class="rules">
+       <div class="ouc-wrap">
+       <h3>大学の目標</h3>
+       <ul>
+         <li>高等学校商業科教員免許を取る
+           <ul>
+             <li class="koumoku">指導力、感情的にならない、聞きやすい話し方、プレゼンテーション能力、教育についての知識</li>
+           </ul></li>
 
-.clear{
-  clear: left;
-}
+         <li>基本情報技術者試験、応用情報技術者試験合格
+           <ul>
+            <li class="koumoku">過去問道場周回、プログラミング学習</li>
+          </ul></li>
+         <li>珈琲の似合う男になる
+          <ul>
+          <li class="koumoku">珈琲を飲む、落ち着いた印象、清潔な格好、知的な喋り</li>
+          </ul></li>
+         <li>色々な人と話す
+        　  <ul>
+             <li　class="koumoku">雑談力、表情、積極的に人と関わる</li>
+           </ul>
+         </li>
+    　  </ul>
+       </div>
+       <div class="rules-contents">
+         <h3>ルールを設ける理由：無駄な迷いを無くし、自分のための時間を生み出すため</h3>
+         <ul>
+           <li>服装
+           <ul>
+             <li>紺色のジャケット</li>
+             <li>黒いズボン</li>
+             <li>黒い靴</li>
+             <li>黒 or 紺の靴下</li>
+           </ul>
+           </li>
+           <li>掃除
+           <ul>
+             <li>毎朝掃除機をかける</li>
+             <li>寝る前に部屋を片付ける</li>
+          </ul>
+          </li>
+           <li>行動
+　　　　　　　<ul>
+             <li>本はときめきで選ぶ</li>
+             <li>１週間に１度も使わないものは捨てる</li>
+             <li>購買する際は塾講し、良いものを長く使う</li>
+           </ul>
+           </li>
+           <li>思想
+           <ul>
+             <li>人の印象に残るような人になる</li>
+             <li>全ての事柄に対し、疑いから入る</li>
+             <li>わからないことをわからないままにしない</li>
+           </ul>
+          </li>
+           <li>食事
+           <ul>
+             <li>タンパク質を意識して取る（毎食20g）</li>
+             <li>腹八分目を目安にする</li>
+             <li>水分をこまめに取る</li>
+           </ul>
+          </li>
+           <li>生活週間
+           <ul>
+             <li>a.m.7:00起床 p.m.12:00就寝</li>
+             <li>1日1回は外出する</li>
+             <li>外出時は左胸ポケットに財布、ズボン右ポケットに鍵、左手に時計をする</li>
+             <li>筋トレをする（ジャケットの似合う体を目指す）</li>
+             <li>意味もなくSNSを循環しない</li>
+             <li>発信者になる</li>
+           </ul>
+         </li>
+         </ul>
+         <p>※MYRULESは環境の変化や思考の変化によって随時変更されます</p>
+       </div>
+     </div>
+    </div>
+    <div class="sns">
+      <div class="sns-wrap">
+        <div class="container">
+        <a href="https://www.facebook.com/profile.php?id=100040626302255"><span class="fab fa-facebook-square"></span> facebook</a>
+        <a href="https://twitter.com/Fujikazutanuki"><span class="fab fa-twitter-square"></span> twitter</a>
+        <a href="https://www.instagram.com/kazu_my"><span class="fab fa-instagram"></span> instagram</a>
+        </div>
+       </div>
+     </div>
+  </div>
 
-.container{
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.small{
-  font-size: 20px;
-  letter-spacing: 0px;
-}
-
-/* header ------------------*/
-
-header{
-  height: 65px;
-  width: 100%;
-  background-color: rgba(30,30,30,0.9);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.header-left{
-  float: left;
-}
-
-.header-left h1{
-  padding: 0 25px;
-  color: #F2F2F2;
-  display: block;
-  margin-top:15px
-}
-
-.header-right{
-  float: right;
-}
-
-.header-right a{
-  line-height: 65px;
-  padding: 0 25px;
-  color: #F2F2F2;
-  display: block;
-  float:left;
-  transition: all 0.5s;
-}
-
-
-.header-right a:hover{
-  background-color: rgba(242,242,242,0.2);
-}
-
-/* top --------------------------*/
-
-.top-wrapper{
-  width: 100vw;
-  height: 100vh;
-  background: #FFFFFF url(images/me.jpg) no-repeat;
-  background-blend-mode: lighten;
-  background-size: cover;
-  color: rgb(30,30,30);
-  text-align: center;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  padding-top: 300px;
-}
-
-.top-wrapper:before{
-  content: '';
-  background: inherit;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;
-}
-
-.top-wrapper h1{
-  opacity: 0.8;
-  font-size: 45px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p{
-  opacity: 0.8;
-}
-
-.mid-wrapper{
-  text-align: left;
-  background-color: #E0E0E0;
-  padding:10px;
-}
-
-.bottom-wrapper{
-  background-color: #F2F2F2;
-  padding:10px;
-}
-
-.bottom-wrapper p{
-text-align: left;
-}
-
-/* footer  -------------------------------*/
-.sns{
-    padding:30px 0;
-    background-color: rgb(120,120,120);
-}
-.sns-wrap{
-  display: inline-block;
-  width:100%;
-}
-
-.sns-wrap a{
- text-align: center;
-  color: white;
-  width: 33%;
-  float: left;
-}
-.fa{
-  padding: 10px;
-}
-footer{
-  padding-top: 30px;
-  padding-bottom: 20px;
-  background-color: rgb(30,30,30);
-  text-align: center;
-}
-
-small{
-  color: #F2F2F2;
-}
-
-
-
-/*                 MY PROFILE
-------------------------------------------------------*/
-
-.profile-wrap{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #F2F2F2;
-}
-.profile-wrap span{
-  color: rgb(0,0,0,0.4);
-}
-.profile-wrap img{
-  width: 300px;
-  height: auto;
-}
-
-.center{
-  padding-top: 30px;
-  text-align: center;}
-
-.his-wrap span{
-    color: rgb(0,0,0,0.4);
-
-  }
-
-.content-wrap{
-  padding-bottom: 50px;
-  border-bottom: solid 1px rgb(30,30,30);
-}
-
-.his-wrap{
-  width: 100%;
-  margin: 0 auto;
-}
-.Y-his{
-  background-color: #E0E0E0;
-  padding: 1px 0;
-}
-
-.E-his{
-  background-color: #F2F2F2;
-  padding: 1px;
-}
-
-.J-his{
-    background-color: #E0E0E0;
-    padding: 1px;
-}
-
-.H-his{
-  background-color: #F2F2F2;
-  padding: 1px;
-}
-
-.C-his{
-  background-color: #E0E0E0;
-  padding: 1px;
-}
-
-/*             MY RULES
------------------------------------------------------------*/
-
-.rules-wrap{
-  padding-top: 100px;
-  padding-bottom:0px;
-  background-color: #F2F2F2;
-}
-
-.rules-wrap h1{
-  text-align: center;
-}
-
-.rules-wrap p{
-  text-align: center;
-}
-
-.ouc-wrap{
-  width: 100%;
-  background-color: #E0E0E0;
-  padding: 10px;
-}
-
-.ouc-wrap h3{
-  text-decoration: underline;
-}
-
-.ouc-wrap ul{
-}
-
-.koumoku{
-  padding:3px;
-}
-
-.rules p{
-  color: rgb(0,0,0,0.4);
-  padding-top: 30px;
-}
-
-/*    media各種設定　　　　　　　　　　　　　　　　　
------------------------------------------------*/
-
-@media all and (max-width: 1000px){
-  header{
-    height: 130px;
-  }
-  .header-right{
-    float:none;
-    display: inline-block;
-    width:100%;
-  }
-  .header-right a{
-    text-align: center;
-    width: 33%;
-    padding:0 0;
-    margin: 0 auto;
-  }
-  .top-wrapper{
-    margin-top:130px;
-    max-width: 1000px;
-    height: auto;
-    padding-top: 150px;
-    padding-bottom: 150px;
-  }
-
-  .profile-wrap{
-    padding-top: 165px;
-  }
-  .rules-wrap{
-    padding-top: 165px;
-  }
-}
+  <footer>
+    <small>&copy; 2020 FujiTanuki</small>
+  </footer>
+</html>
