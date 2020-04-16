@@ -165,8 +165,8 @@ small{
   padding-bottom: 100px;
   background-color: #F2F2F2;
 }
-.content-wrap span{
-  color: rgb(0,0,0,0.4);
+.profile-wrap span{
+  color: rgba(0,0,0,0.4);
 }
 .profile-wrap img{
   width: 300px;
@@ -178,7 +178,7 @@ small{
   text-align: center;}
 
 .his-wrap span{
-    color: rgb(0,0,0,0.4);
+    color: rgba(0,0,0,0.4);
 
   }
 
@@ -251,7 +251,7 @@ small{
 }
 
 .rules p{
-  color: rgb(0,0,0,0.4);
+  color: rgba(0,0,0,0.4);
   padding-top: 30px;
 }
 
